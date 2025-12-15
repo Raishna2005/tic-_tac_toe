@@ -5,5 +5,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/tic-tac-toe-react/", // <--- Add this line
+  // Use a relative base so built assets work when served from any path
+  base: './',
 })
